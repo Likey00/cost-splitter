@@ -25,9 +25,10 @@ fn SingleExtra(cx: Scope, idx: usize, extra: Extra) -> Element {
 
     render! {
         div {
-            class: "col s10",
+            class: "input-field col s12",
             input {
                 id: "extra-input-{idx}",
+                class: "col s10",
                 r#type: "number",
                 value: "{extra.price}",
                 min: "0",
@@ -40,18 +41,18 @@ fn SingleExtra(cx: Scope, idx: usize, extra: Extra) -> Element {
                 class: "active",
                 r#for: "extra-input-{idx}",
                 "Edit {extra.name}",
-            }
-        },
-        button {
-            id: "extra-input-button-{idx}",
-            class: "btn-floating text-center red",
-            r#type: "button",
-            onclick: move |_| {
-                extras_list.write().0.remove(*idx);
             },
-            i {
-                class: "material-icons",
-                "remove",
+            button {
+                id: "extra-input-button-{idx}",
+                class: "btn-floating text-center red",
+                r#type: "button",
+                onclick: move |_| {
+                    extras_list.write().0.remove(*idx);
+                },
+                i {
+                    class: "material-icons",
+                    "remove",
+                }
             }
         }
     }
