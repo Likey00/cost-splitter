@@ -1,41 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Cost Splitter dioxus | ⛺</title>
-  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <style>
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-               -webkit-appearance: none;
-                margin: 0;
-        }
- 
-        input[type=number] {
-            -moz-appearance: textfield;
-        }
-    </style>
-</head>
-<body>
-  <div id="main"></div>
-  <script>
-    document.addEventListener("wheel", function(event) {
-      if (document.activeElement.type === "number") {
-        document.activeElement.blur();
-      }
-    });
+<!doctype html><title>Cost Splitter </title><meta content="text/html;charset=utf-8" http-equiv=Content-Type><meta content="width=device-width,initial-scale=1" name=viewport><meta charset=UTF-8><link href=https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css rel=stylesheet><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel=stylesheet><style>input:-webkit-inner-spin-button ,input:-webkit-outer-spin-button{-webkit-appearance:none;margin:0}input[type=number]{-moz-appearance:textfield}</style><link as=fetch crossorigin href=/cost-splitter/cost-splitter-1daac1751c7f3df90c2cd636b36e06e4d72ce3100b78e762b442860357c3c68294e008656000b24018ee08cd255c2ffb_bg.wasm integrity=sha384-HarBdRx_PfkMLNY2s24G5Ncs4xALeOditEKGA1fDxoKU4AhlYACyQBjuCM0lXC_7 rel=preload type=application/wasm><link crossorigin href=/cost-splitter/cost-splitter-1daac1751c7f3df90c2cd636b36e06e4d72ce3100b78e762b442860357c3c68294e008656000b24018ee08cd255c2ffb.js integrity=sha384-KFavfI6xh5VzeHzGFYh8xwL_75uQ4pH68gC_I-KBF3yO_421jyhndN3xu2TlvNtc rel=modulepreload><link crossorigin href=/cost-splitter/snippets\dioxus-web-a95d8cc6c91ff8eb\src\eval.js integrity=sha384-O0D0g9-cXudxTrzdAXYhjXnsL7oWNAzJlU2rv4ODwkbWi11CK6ZE3wz5cPJ3Jh5w rel=modulepreload><link crossorigin href=/cost-splitter/snippets\dioxus-interpreter-js-85a0a2f8acce2e86\src\common.js integrity=sha384-lzhIKFjPLtFPM5DY6d4qVHYjT1gzier1nZoghJwOJxSCKWPH_pInX_eoUPWV5g4c rel=modulepreload><link crossorigin href=/cost-splitter/snippets\dioxus-web-a95d8cc6c91ff8eb\inline0.js integrity=sha384-Dxcv63sNi1i1y3YoU65Oahj_MNKUBEPhWTkbqWXzN9PtLxrFSdv0FtNQFiODlF_F rel=modulepreload><link crossorigin href=/cost-splitter/snippets\dioxus-interpreter-js-85a0a2f8acce2e86\inline0.js integrity=sha384-vvj1X3-9J0IXDPIIFKLsnScHQhUNys8A2IPcf9Pz7tGQhc-CO1iDtnZei8ZwZm9z rel=modulepreload></head><body><div id=main></div><script>document.addEventListener("wheel",function(a){if(document.activeElement.type==="number"){document.activeElement.blur()}})</script><script type=module>
+import init, * as bindings from '/cost-splitter/cost-splitter-1daac1751c7f3df90c2cd636b36e06e4d72ce3100b78e762b442860357c3c68294e008656000b24018ee08cd255c2ffb.js';
+init('/cost-splitter/cost-splitter-1daac1751c7f3df90c2cd636b36e06e4d72ce3100b78e762b442860357c3c68294e008656000b24018ee08cd255c2ffb_bg.wasm');
+window.wasmBindings = bindings;
 
-  </script>
-  
-<script type="module">
-    import init from "/./assets/dioxus/name.js";
-    init("/./assets/dioxus/name_bg.wasm").then(wasm => {
-      if (wasm.__wbindgen_start == undefined) {
-        wasm.main();
-      }
-    });
-    </script>
-    </body>
+</script></body></html>
