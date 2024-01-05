@@ -8,10 +8,7 @@ pub fn ExtrasDisplay(cx: Scope) -> Element {
     if !extras_list.read().0.is_empty() {
         render! {
             for (idx, extra) in extras_list.read().0.iter().enumerate() {
-                div {
-                    class: "row",
-                    SingleExtra { idx: idx, extra: extra.clone() }
-                }
+                SingleExtra { idx: idx, extra: extra.clone() }
             }
         }
     } else {

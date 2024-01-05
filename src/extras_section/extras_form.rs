@@ -23,35 +23,32 @@ pub fn ExtrasForm(cx: Scope) -> Element {
 
     render! {
         div {
-            class: "row",
-            div {
-                class: "input-field col s12",
-                input {
-                    id: "extras-input",
-                    class: "col s10",
-                    r#type: "text",
-                    placeholder: "Add Extra Charges",
-                    oninput: move |e| {
-                        extra_name.set(e.value.clone());
-                    },
-                    value: "{extra_name.get()}",
-                    onkeydown: move |e| {
-                        if e.key() == Key::Enter {
-                            add_extra();
-                        }
-                    }
+            class: "input-field col s12",
+            input {
+                id: "extras-input",
+                class: "col s10",
+                r#type: "text",
+                placeholder: "Add Extra Charges",
+                oninput: move |e| {
+                    extra_name.set(e.value.clone());
                 },
-                button {
-                    id: "item-button",
-                    class: "btn-floating text-center green",
-                    r#type: "button",
-                    onclick: move |_| add_extra(),
-                    i {
-                        class: "material-icons",
-                        "add"
+                value: "{extra_name.get()}",
+                onkeydown: move |e| {
+                    if e.key() == Key::Enter {
+                        add_extra();
                     }
-                },
-            }
+                }
+            },
+            button {
+                id: "item-button",
+                class: "btn-floating text-center green",
+                r#type: "button",
+                onclick: move |_| add_extra(),
+                i {
+                    class: "material-icons",
+                    "add"
+                }
+            },
         }
     }
 }
